@@ -54,7 +54,7 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
   //              //change timezone to its abbreviation
                 try {
                     // member.tz = moment().tz(member.tz).format('z');
-                    member.tz = moment(currentdate).tz(member.tz).format('hma z');
+                    member.tz = moment(currentdate).tz(member.tz).format('h:m a z');
                 } catch (err) {
                     console.warn(err);
                 }
