@@ -52,7 +52,7 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
  //                   member.tz = moment().tz(member.tz).format('z');
    //             } catch (err) {
      //               console.warn(err);
-                }
+       //         }
 
                 //push into members array
                 team.members.push(member);
