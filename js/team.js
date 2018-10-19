@@ -47,11 +47,11 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
                         member.github = membersDataDict[member.real_name]["github"];
                 }catch(err){}
 
-                //change timezone to its abbreviation
-                try {
-                    member.tz = moment().tz(member.tz).format('z');
-                } catch (err) {
-                    console.warn(err);
+  //              //change timezone to its abbreviation
+ //               try {
+ //                   member.tz = moment().tz(member.tz).format('z');
+   //             } catch (err) {
+     //               console.warn(err);
                 }
 
                 //push into members array
