@@ -12,6 +12,7 @@ membersDataDict["{{member.name}}"] = {};
 {% if member.name %}membersDataDict["{{member.name}}"]["real_name"] = "{{member.name}}";{% endif %}
 {% if member.googleplus %}membersDataDict["{{member.name}}"]["googleplus"] = "{{member.googleplus}}";{% endif %}
 {% if member.github %}membersDataDict["{{member.name}}"]["github"] = "{{member.github}}";{% endif %}
+{% if member.timezone %}membersDataDict["{{member.name}}"]["tz"] = "{{member.timezone}}";{% endif %}
 {% endfor %}
 
 // API URL
@@ -50,11 +51,11 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
                 }catch(err){}
 
   //              //change timezone to its abbreviation
- //               try {
- //                   member.tz = moment().tz(member.tz).format('z');
-   //             } catch (err) {
-     //               console.warn(err);
-       //         }
+                try {
+                    member.tz = moment().tz(member.tz).format('z');
+                } catch (err) {
+                    console.warn(err);
+                }
 
                 //push into members array
                 team.members.push(member);
