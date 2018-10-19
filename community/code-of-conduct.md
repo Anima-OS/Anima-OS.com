@@ -8,7 +8,7 @@ priority: 0.6
 style: black.css
 ---
 
-<img alt="Logo" src="/Anima-OS.com/images/logo.svg" height="120">
+<img alt="Logo" src="{{ site.baseurl }}/images/logo.svg" height="120">
 
 1. The project creators, lead developers, and the core team constitute
 the managing members of the project. These members have final say in every
