@@ -54,10 +54,10 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
                 try {
                     if(membersDataDict[member.real_name]["timezone"] != undefined)
                     // member.tz = moment().tz(member.tz).format('z');
-                    //setTimeout(function(){
+                    setInterval(function(){
                         var currentdate = new Date();
                         member.tz = moment(currentdate).tz(member.tz).format('h:m:s a z');
-                    //}, 500);
+                    }, 500);
                 } catch (err) {
                     console.warn(err);
                 }
