@@ -30,7 +30,6 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
 //    $http.get(apiUrl)
 //        .success(function(data) {
 
-setInterval(function(){
             //push all members
             angular.forEach(membersDataDict, function (member) {
                 //if image is blank, set url to default image
@@ -65,7 +64,6 @@ setInterval(function(){
 
                 //push into members array
                 team.members.push(member);
-                    }, 10000);
             });
         })
 //        .error(function(data) {
