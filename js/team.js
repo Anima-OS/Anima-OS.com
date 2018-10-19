@@ -12,6 +12,8 @@ membersDataDict["{{member.name}}"] = {};
 {% if member.name %}membersDataDict["{{member.name}}"]["real_name"] = "{{member.name}}";{% endif %}
 {% if member.googleplus %}membersDataDict["{{member.name}}"]["googleplus"] = "{{member.googleplus}}";{% endif %}
 {% if member.github %}membersDataDict["{{member.name}}"]["github"] = "{{member.github}}";{% endif %}
+{% if member.mozilla %}membersDataDict["{{member.name}}"]["mozilla"] = "{{member.mozilla}}";{% endif %}
+{% if member.stackexchange %}membersDataDict["{{member.name}}"]["stackexchange"] = "{{member.stackexchange}}";{% endif %}
 {% if member.timezone %}membersDataDict["{{member.name}}"]["tz"] = "{{member.timezone}}";{% endif %}
 {% endfor %}
 
