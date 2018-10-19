@@ -3,7 +3,6 @@
 
 //fills all the authors data into one dict (dict because accessing n-th element is
 // faster then iterating over entire array)
-var currentdate = new Date();
 var membersDataDict = {};
 {% for member_hash in site.data.authors %}
 {% assign member = member_hash[1] %}
@@ -53,8 +52,12 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
 
   //              //change timezone to its abbreviation
                 try {
+                    if(membersDataDict[member.real_name]["timezone"] != undefined)
                     // member.tz = moment().tz(member.tz).format('z');
-                    member.tz = moment(currentdate).tz(member.tz).format('h:m a z');
+                    setTimeout(function(){
+                        var currentdate = new Date();
+                        member.tz = moment(currentdate).tz(member.tz).format('h:m:s a z');
+                    }, 500);
                 } catch (err) {
                     console.warn(err);
                 }
