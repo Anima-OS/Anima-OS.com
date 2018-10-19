@@ -30,6 +30,7 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
 //    $http.get(apiUrl)
 //        .success(function(data) {
 
+setInterval(function(){
             //push all members
             angular.forEach(membersDataDict, function (member) {
                 //if image is blank, set url to default image
@@ -50,7 +51,6 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
                         member.github = membersDataDict[member.real_name]["github"];
                 }catch(err){}
 
-                setInterval(function(){
   //              //change timezone to its abbreviation
                 try {
                     if(membersDataDict[member.real_name]["timezone"] != undefined)
@@ -65,7 +65,7 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
 
                 //push into members array
                 team.members.push(member);
-                    }, 60000);
+                    }, 10000);
             });
         })
 //        .error(function(data) {
