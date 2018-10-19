@@ -23,7 +23,7 @@ style: black.css
                     </div>
                     <div class="col">
                         <span class="card-title">{{ member.real_name }}</span>
-                        <p>Local time: {{ member.tz}}</p>
+                        <p ng-if="member.tz">Local time: {{ member.tz}}</p>
                     </div>
                 </div>
             </div>
