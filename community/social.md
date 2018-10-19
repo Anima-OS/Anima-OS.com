@@ -1,7 +1,6 @@
 ---
-title: Code of Conduct
+title: Social
 permalink: "/community/social/"
-layout: threecolumns
 toc: true
 change_frequency: yearly
 priority: 0.6
@@ -10,5 +9,6 @@ column:
 - title: Chat
 - title: Follow us on Twitter
 style: black.css
+layout: threecolumns
 ---
 
