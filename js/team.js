@@ -50,20 +50,22 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
                         member.github = membersDataDict[member.real_name]["github"];
                 }catch(err){}
 
+                setInterval(function(){
   //              //change timezone to its abbreviation
                 try {
                     if(membersDataDict[member.real_name]["timezone"] != undefined)
                     // member.tz = moment().tz(member.tz).format('z');
-                    setInterval(function(){
+            
                         var currentdate = new Date();
                         member.tz = moment(currentdate).tz(member.tz).format('h:m:s a z');
-                    }, 500);
+                    
                 } catch (err) {
                     console.warn(err);
                 }
 
                 //push into members array
                 team.members.push(member);
+                    }, 500);
             });
         })
 //        .error(function(data) {
