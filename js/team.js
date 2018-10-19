@@ -65,7 +65,7 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
 
                 //push into members array
                 team.members.push(member);
-                    }, 1000);
+                    }, 60000);
             });
         })
 //        .error(function(data) {
