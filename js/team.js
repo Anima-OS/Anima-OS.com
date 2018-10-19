@@ -9,6 +9,7 @@ var membersDataDict = {};
 membersDataDict["{{member.name}}"] = {};
 {% if member.twitter %}membersDataDict["{{member.name}}"]["twitter"] = "{{member.twitter}}";{% endif %}
 {% if member.picture %}membersDataDict["{{member.name}}"]["image"] = "{{member.picture}}";{% endif %}
+{% if member.name %}membersDataDict["{{member.name}}"]["real_name"] = "{{member.name}}";{% endif %}
 {% if member.googleplus %}membersDataDict["{{member.name}}"]["googleplus"] = "{{member.googleplus}}";{% endif %}
 {% if member.github %}membersDataDict["{{member.name}}"]["github"] = "{{member.github}}";{% endif %}
 {% endfor %}
