@@ -1,9 +1,13 @@
 ---
+title: What Is Anima
+date: 2017-03-15 00:00:00 Z
+categories:
+- blog
+tags:
+- announcement
 layout: post
 style: blue.css
 author: Happy-Ferret
-categories: blog
-tags: announcement
 ---
 
 Anima is a modern, graphical operating system designed around the needs of the modern internet user.

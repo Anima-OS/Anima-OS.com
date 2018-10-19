@@ -1,7 +1,7 @@
 ---
-layout: onecolumn
 title: Code of Conduct
-permalink: /community/code-of-conduct/
+permalink: "/community/code-of-conduct/"
+layout: onecolumn
 toc: true
 change_frequency: yearly
 priority: 0.6

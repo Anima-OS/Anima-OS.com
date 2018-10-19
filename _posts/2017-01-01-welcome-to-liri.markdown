@@ -1,11 +1,13 @@
 ---
+title: Welcome to Liri!
+date: 2017-01-01 00:00:00 Z
+categories:
+- blog
+tags:
+- announcement
 layout: post
 style: blue.css
-title: "Welcome to Liri!"
-date: 2017-01-01 00:00:00 +0000
 author: plfiorini
-categories: blog
-tags: announcement
 ---
 
 We are proud to announce Liri, an OS and apps built with modern design and features.
