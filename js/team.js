@@ -13,19 +13,19 @@ membersDataDict["{{member.name}}"] = {};
 {% endfor %}
 
 // API URL
-{% if jekyll.environment == 'production' %}
-var apiUrl = '{{ site.baseurl }}/api/team';
-{% else %}
-var apiUrl = 'http://localhost:4000/team';
-{% endif %}
+//{% if jekyll.environment == 'production' %}
+//var apiUrl = '{{ site.baseurl }}/api/team';
+//{% else %}
+//var apiUrl = 'http://localhost:4000/team';
+//{% endif %}
 
 //add angular app
 angular.module('team', []).controller('teamController', function($scope, $http) {
     var team = this;
     team.members = [];
 
-    $http.get(apiUrl)
-        .success(function(data) {
+//    $http.get(apiUrl)
+//        .success(function(data) {
 
             //push all members
             angular.forEach(data.members, function (member) {
@@ -58,7 +58,7 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
                 team.members.push(member);
             });
         })
-        .error(function(data) {
-            console.log('Error: ' + data);
-        });
-});
+//        .error(function(data) {
+  //          console.log('Error: ' + data);
+    //    });
+//});
