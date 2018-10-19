@@ -8,6 +8,7 @@ var membersDataDict = {};
 {% assign member = member_hash[1] %}
 membersDataDict["{{member.name}}"] = {};
 {% if member.twitter %}membersDataDict["{{member.name}}"]["twitter"] = "{{member.twitter}}";{% endif %}
+{% if member.picture %}membersDataDict["{{member.name}}"]["image"] = "{{member.picture}}";{% endif %}
 {% if member.googleplus %}membersDataDict["{{member.name}}"]["googleplus"] = "{{member.googleplus}}";{% endif %}
 {% if member.github %}membersDataDict["{{member.name}}"]["github"] = "{{member.github}}";{% endif %}
 {% endfor %}
