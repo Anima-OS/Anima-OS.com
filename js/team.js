@@ -56,7 +56,7 @@ angular.module('team', []).controller('teamController', function($scope, $http) 
                     // member.tz = moment().tz(member.tz).format('z');
             
                         var currentdate = new Date();
-                        member.tz = moment(currentdate).tz(member.tz).format('h:m:s a z');
+                        member.tz = moment(currentdate).tz(member.tz).format('h:mm:s a z');
                     
                 } catch (err) {
                     console.warn(err);
