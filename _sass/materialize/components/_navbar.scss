@@ -21,11 +21,6 @@ nav {
     position: relative;
     height: 100%;
   }
-  
- .sticky {
-  position: fixed;
-  top: 0;
-}
 
   @media #{$large-and-up} {
     a.button-collapse { display: none; }
@@ -185,4 +180,9 @@ nav {
   .navbar-fixed {
     height: $navbar-height;
   }
+}
+
+ .sticky {
+  position: fixed;
+  top: 0;
 }
