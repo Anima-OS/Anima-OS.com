@@ -1,0 +1,26 @@
+---
+title: Screenshots
+permalink: "/screenshotsNew/"
+layout: page
+style: black.css
+navitem: nav-screenshots
+---
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+</script>
+
+<div class="container">
+ <div class="slider">
+ <ul class="slides">
+  <li>
+      <img class="materialboxed responsive-img z-depth-1" data-caption="Desktop" src="{{ site.baseurl }}/images/screenshots/desktop1.png">
+  </li>
+  <li>
+      <img class="materialboxed responsive-img z-depth-1" data-caption="Desktop" src="{{ site.baseurl }}/images/screenshots/movie1.png">
+  </li>
+  </ul>
+</div>
+</div>
