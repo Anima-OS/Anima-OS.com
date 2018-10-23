@@ -14,7 +14,7 @@ description: 'An OS for the modern internet user.
 '
 baseurl: "/"
 url: https://anima-os.com
-logo: "/Anima-OS.com/images/logo.svg"
+logo: "/images/logo.svg"
 exclude:
 - ".travis"
 - vendor
