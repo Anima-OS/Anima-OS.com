@@ -12,7 +12,7 @@ email: warfan2007@gmail.com
 description: 'An OS for the modern internet user.
 
 '
-baseurl: "/Anima-OS.com"
+baseurl: "/"
 url: https://anima-os.com
 logo: "/Anima-OS.com/images/logo.svg"
 exclude:
