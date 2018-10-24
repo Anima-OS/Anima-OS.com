@@ -6,7 +6,7 @@
 @import "materialize/components/color";
 @import "materialize/components/variables";
 
-$navbar-height-mobile: 64px !default;
+$navbar-height-mobile: 64px !important;
 
 $primary-color: color("red", "base") !default;
 $secondary-color: color("red", "base") !default;
