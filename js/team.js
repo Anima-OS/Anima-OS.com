@@ -7,6 +7,7 @@ var membersDataDict = {};
 {% for member_hash in site.data.authors %}
 {% assign member = member_hash[1] %}
 membersDataDict["{{member.name}}"] = {};
+{% if member.home %}membersDataDict["{{member.name}}"]["home"] = "{{member.home}}";{% endif %}
 {% if member.twitter %}membersDataDict["{{member.name}}"]["twitter"] = "{{member.twitter}}";{% endif %}
 {% if member.picture %}membersDataDict["{{member.name}}"]["image"] = "{{member.picture}}";{% endif %}
 {% if member.name %}membersDataDict["{{member.name}}"]["real_name"] = "{{member.name}}";{% endif %}
